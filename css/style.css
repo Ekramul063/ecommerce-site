@@ -36,7 +36,7 @@ a:hover{
 }
 :root{
 	--primary: #FF6F61;
-	-- bg_white: #FFFFFF;
+	--white:#FFFFFF;
 	--body: #F3F6FF;
 	--dark: #000000;
 	--list_font: 16px;
@@ -62,14 +62,19 @@ a:hover{
 	font-size: 14px;
 	padding-right: 5px;
 }
-.top_nav_grid .phone::before{
-	content: "\f879";
+/* .top_nav_grid .phone::before{
+	content: "\f0e0";
 	font-family: 'Font Awesome 5 Free';
 	font-size: 14px;
-	padding-right: 8px;
+	padding-right: 5px;
+
+} */
+
+.phone i{
+	display: inline-block;
+	margin-right: 5px;
 
 }
-
 
 .top_nav_2{
 	background: var(--primary);
@@ -102,13 +107,17 @@ a:hover{
 	background:red;
 }
 
-.main_menu li ul{
+.morepage ul{
 	width: 200px;
 	padding: 5px 0px 10px 0px;
 	left: 0;
 	position: absolute;
 	background: var(--primary);
 	display: none;
+}
+.morepage:hover.morepage ul{
+	display: block;
+
 }
 .main_menu li ul li{
 	float: none;	
@@ -856,9 +865,11 @@ footer p{
 	}
 	.footer_row{
 		flex-direction: column;
+		text-align: center;
 	}
 	.footer_row p{
 		padding-bottom: 10px;
+		font-size: 15px;
 	}
 	.query_row {
     flex-direction: column;
@@ -978,7 +989,8 @@ footer p{
     align-items: center;
 }
 .phone{
-	padding-top: 10px;
+	padding-top: 8px;
+	margin-left: -50px;
 }
 .slider_btn {
     padding: 5px 6px;
@@ -1002,4 +1014,3 @@ footer p{
     width: 30px;
 }
 }
-
